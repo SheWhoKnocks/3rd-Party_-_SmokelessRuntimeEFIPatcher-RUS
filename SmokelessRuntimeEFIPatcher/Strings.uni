@@ -7,14 +7,9 @@
 
 #string STR_SHELL_STATUS                    #language en-GB  "ShellParameters init status: "
 
-#string STR_INVALID_LAUNCH_PARM             #language en-GB  "Entered argument: "
-
 #string STR_LANG_SWITCH_DISABLED            #language en-GB  "Language switch is disabled due to the outdated UEFI shell or driver load!\n\n\r"
 
 #string STR_LANG_VAR_WP                     #language en-GB  "SREPLang variable doesn't exist or WP! Language switch disabled.\nStatus: "
-
-#string STR_PRESS_L                         #language ru-RU  "Нажмите \"L\" чтобы включить логирование, или ничего не делайте для пропуска\n\r"
-                                            #language en-GB  "Press \"L\" key to enable logging, or wait several seconds to leave it disabled\n\r"
 
 #string STR_LAUNCHED                        #language ru-RU  "SREP запущен\n\r"
                                             #language en-GB  "SREP launched\n\r"
@@ -46,8 +41,8 @@
 #string STR_CFG_SIZE                        #language ru-RU  "Размер конфига в HEX: 0x"
                                             #language en-GB  "Config size in HEX: 0x"
 
-#string STR_PARSING                         #language ru-RU  "Начало обработки данных\n\rСтираем ненужные переносы строк\n\r"
-                                            #language en-GB  "Parsing Config\n\rStripping NewLine, Carriage and Return\n\r"
+#string STR_PARSING                         #language ru-RU  "Начало обработки данных\n\r"
+                                            #language en-GB  "Parsing Config\n\r"
 
 #string STR_CURRENT_LINE                    #language ru-RU  "В данный момент обрабатываем строку "
                                             #language en-GB  "Current parsing "
@@ -55,8 +50,8 @@
 #string STR_COMMAND                         #language ru-RU  "Команда "
                                             #language en-GB  "Command "
 
-#string STR_OP_END                          #language ru-RU  "Обнаружена команда End, операции над дескриптором доб. в очередь\n\r"
-                                            #language en-GB  "Op End detected\n\r"
+#string STR_OP_END                          #language ru-RU  "Op End остановило обработку\n\r"
+                                            #language en-GB  "Op End detected, parsing finished\n\r"
 
 #string STR_OP_EXEC                         #language ru-RU  "Обнаружена команда Exec, запуск приложения доб. в очередь\n\r"
                                             #language en-GB  "Op Exec detected\n\r"
@@ -94,6 +89,9 @@
 #string STR_SECTION_GUID_INPUT              #language ru-RU  "Ввод SectionGuid: "
                                             #language en-GB  "SectionGuid input: "
 
+#string STR_NO_PATCH_TYPE                   #language ru-RU  "Ожидалось Pattern или Offset, но получен аргумент: "
+                                            #language en-GB  "Expected Pattern or Offset argument, but got: "
+
 #string STR_ARG_OFFSET                      #language ru-RU  "Смещение получено\n\r"
                                             #language en-GB  "Found Offset\n\r"
 
@@ -121,8 +119,11 @@
 #string STR_SEARCH_RESULT                   #language ru-RU  "Результат попытки поиска: "
                                             #language en-GB  "Search result: "
 
-#string STR_SECTION_BASENSIZE               #language ru-RU  "Смещение и размер секции: "
-                                            #language en-GB  "Section Base and Size: "
+#string STR_IMAGE_GUIDNSIZE                 #language ru-RU  "GUID и размер секции: "
+                                            #language en-GB  "Image GUID and Size: "
+
+#string STR_IMAGE_BASENSIZE                 #language ru-RU  "Смещение и размер секции: "
+                                            #language en-GB  "Image Base and Size: "
 
 #string STR_BIN_SIZE                        #language ru-RU  "Размер целевого, последнего загруженного драйвера в HEX: 0x"
                                             #language en-GB  "Patching Image Size: 0x"
@@ -173,7 +174,7 @@
                                             #language en-GB  "Skipping "
 
 #string STR_LAST_STATUS                     #language ru-RU  "Переход не случился, прошлая команда вернула: "
-                                            #language en-GB  "Skip did not happened, last command returned: "
+                                            #language en-GB  "Skip did not happen, last command returned: "
 
 #string STR_BREAKING_CAUSE                  #language ru-RU  "Причина остановки: "
                                             #language en-GB  "Breaking cause: "
@@ -181,14 +182,8 @@
 #string STR_PROTOCOL_UNINSTALLED            #language ru-RU  "Протокол удален\n\r"
                                             #language en-GB  "Protocol uninstalled\n\r"
 
-#string STR_RECOMMENDED_PROTOCOLS           #language ru-RU  "Рекомендуемые протоколы:\nEFI_FIRMWARE_VOLUME_PROTOCOL_GUID(good for HP Insyde Rev.3)\n389F751F-1838-4388-8390-CD8154BD27F8\n\nEFI_LEGACY_BIOS_PROTOCOL_GUID(good for Aptio 4, Insyde Rev.3)\nDB9A1E3D-45CB-4ABB-853B-E5387FDB2E2D\n\n\r"
-                                            #language en-GB  "Recommended protocols are:\nEFI_FIRMWARE_VOLUME_PROTOCOL_GUID(good for HP Insyde Rev.3)\n389F751F-1838-4388-8390-CD8154BD27F8\n\nEFI_LEGACY_BIOS_PROTOCOL_GUID(good for Aptio 4, Insyde Rev.3)\nDB9A1E3D-45CB-4ABB-853B-E5387FDB2E2D\n\n\r"
-
 #string STR_CONVERTATION_FAILED             #language ru-RU  "Не удалось сконвертировать строку: "
                                             #language en-GB  "Failed converting input string: "
-
-#string STR_CURRENT_FILTER                  #language ru-RU  "Фильтрация по протоколу: "
-                                            #language en-GB  "Now filtering Handles by protocol: "
 
 #string STR_NO_HANDLE                       #language ru-RU  "Не удалось найти ни одного дескриптора\n\r"
                                             #language en-GB  "Сould not find any handle\n\r"
@@ -241,8 +236,8 @@
 #string STR_HANDLE_DUMP                     #language ru-RU  "Список дескрипторов:\n\r"
                                             #language en-GB  "Verbose handle list:\n\r"
 
-#string STR_PACK_NOT_FOUND                  #language ru-RU  "Указанный HII Database package не найден или ещё не опубликован\n\r"
-                                            #language en-GB  "The specified HII Database package is not published yet or doesn't exist\n\r"
+#string STR_PACK_NOT_FOUND                  #language ru-RU  "Form Set не найден в последнем загруженном дескрипторе или ещё не опубликован в HII Database\n\r"
+                                            #language en-GB  "The Form Set couldn't be found in last Loaded Handle or doesn't exist in HII Database\n\r"
 
 #string STR_PACK_FAILED                     #language ru-RU  "Не удалось найти HII Database package: "
                                             #language en-GB  "Failed locating HII Database package: "
